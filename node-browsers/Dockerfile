@@ -1,7 +1,7 @@
 FROM atlassianlabs/docker-node-jdk-chrome-firefox
 
-# Install Ubuntu packages
-RUN sudo apt-get update && \
-    sudo apt-get install -y git rsync && \
-    sudo apt-get clean && \
-    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Install Debian packages
+RUN apt-get update && \
+    apt-get install -y git rsync && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
